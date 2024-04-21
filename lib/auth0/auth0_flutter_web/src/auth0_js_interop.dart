@@ -52,10 +52,10 @@ class Auth0 {
 
   /// Calls Auth0 loginWithRedirect method.
   Future<String?> loginWithRedirect(
-      {String redirectUri = '',
-      required String screenHint}) async {
+      {String redirectUri = '', required String screenHint}) async {
     return await promiseToFuture(_auth0js.loginWithRedirect(
-        RedirectLoginOptions(redirect_uri: redirectUri, screen_hint:screenHint)));
+        RedirectLoginOptions(
+            redirect_uri: redirectUri, screen_hint: screenHint)));
   }
 
   /// Calls Auth0 loginWithPopup method.

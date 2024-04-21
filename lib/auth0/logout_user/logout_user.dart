@@ -1,5 +1,5 @@
-import 'logout_user_stub.dart'
-    if (dart.library.js) 'logout_user_web.dart' as impl;
+import 'logout_user_stub.dart' if (dart.library.js) 'logout_user_web.dart'
+    as impl;
 
 // Cross-platform method for logging out user (via universal login).
 Future<void> logoutUser({

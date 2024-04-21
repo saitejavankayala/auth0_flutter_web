@@ -4,7 +4,8 @@ Future<String?> loginUser({
   required String auth0ClientId,
   String? scheme,
   String? redirectUri,
-  Future<void> Function()? afterLogin, required String screenHint,
+  Future<void> Function()? afterLogin,
+  required String screenHint,
 }) =>
     throw UnsupportedError(
       'This is the stub method, use the active method instead.',

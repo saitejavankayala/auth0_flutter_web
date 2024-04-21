@@ -2,6 +2,7 @@ import '../auth0_flutter_web/auth0_flutter_web.dart' as auth0_web;
 import 'package:flutter/foundation.dart';
 import '../get_logged_in_user/get_logged_in_user_web.dart';
 import '../init_auth0/init_auth0_web.dart';
+
 /// Logs in user (via universal login) on web.
 Future<dynamic> loginUser({
   required String auth0Domain,
@@ -32,8 +33,7 @@ Future<dynamic> loginUser({
         await auth0.loginWithPopup();
       } else {
         await auth0.loginWithRedirect(
-            redirectUri: redirectUri ?? "",
-            screenHint: screenHint);
+            redirectUri: redirectUri ?? "", screenHint: screenHint);
       }
 
       // Check again if user is logged in (after auth attempt).

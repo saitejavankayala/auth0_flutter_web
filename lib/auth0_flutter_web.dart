@@ -2,8 +2,8 @@ library auth0_flutter_web;
 
 import 'package:url_strategy/url_strategy.dart' as url_strategy;
 import '/auth0/auth0.dart' as auth02;
-class Auth0Flutter2 {
 
+class Auth0Flutter2 {
   Auth0Flutter2._();
 
   /// Sets the Auth0 Domain.
@@ -100,9 +100,9 @@ class Auth0Flutter2 {
         auth0ClientId: auth0ClientId,
         redirectUri: redirectUri,
         scheme: scheme,
-        screenHint:screenHint
-      // afterLogin: afterLogin,
-    );
+        screenHint: screenHint
+        // afterLogin: afterLogin,
+        );
   }
 
   /// Fetches the currently authenticated user ID.
