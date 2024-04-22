@@ -29,10 +29,10 @@ packages:
     dependency: "direct main"
     description:
       name: auth0_web_flutter
-      sha256: "6f0003c319dd56cea862cd55c9ebe5349a8b8fc1a72be7269fc7b0e924946a88"
+      sha256: a2cf5fa485cb79b9b16ece5ae4e1935eca4399027e05aceec6678ed1fe638016
       url: "https://pub.dev"
     source: hosted
-    version: "0.0.2"
+    version: "0.0.5"
   boolean_selector:
     dependency: transitive
     description:

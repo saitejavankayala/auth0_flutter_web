@@ -22,9 +22,30 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const Text("welcome")
+      home: Column(children: [
+
+        //creating new user in the auth0
+        ElevatedButton(
+          onPressed: () {
+            Auth0FlutterWeb.instance.userAuthentication( screenHint: 'signup');
+          },
+          child: Text("Signup"),
+        ),
+        // login with existing user in the auth0
+        ElevatedButton(
+          onPressed: () {
+            Auth0FlutterWeb.instance.userAuthentication( screenHint: 'login');
+          },
+          child: Text("login"),
+        ),
+        //clearing sessions for the particular user
+        ElevatedButton(
+          onPressed: () {
+            Auth0FlutterWeb.instance.logoutUser();
+          },
+          child: Text("logout"),
+        ),
+      ]),
     );
   }
 }
-
-
