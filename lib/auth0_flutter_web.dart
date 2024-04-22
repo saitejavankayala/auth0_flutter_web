@@ -3,8 +3,8 @@ library auth0_flutter_web;
 import 'package:url_strategy/url_strategy.dart' as url_strategy;
 import '/auth0/auth0.dart' as auth02;
 
-class Auth0Flutter2 {
-  Auth0Flutter2._();
+class Auth0FlutterWeb {
+  Auth0FlutterWeb._();
 
   /// Sets the Auth0 Domain.
   static set auth0Domain(String value) {
