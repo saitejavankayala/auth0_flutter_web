@@ -33,18 +33,18 @@ Import the library.
 import 'package:auth0_flutter2/auth0_flutter2.dart';
 ```
 
-Then initialize the `Auth0Flutter2` class in your `main()` method.
+Then initialize the `Auth0FlutterWeb` class in your `main()` method.
 
 ```dart
 void main() {
-  Auth0Flutter2.auth0Domain = "AUTH0_DOMAIN";
-  Auth0Flutter2.auth0ClientId = "AUTH0_CLIENT_ID";
-  Auth0Flutter2.redirectUri = "YOUR_APP_REDIRECT_URI";
+  Auth0FlutterWeb.auth0Domain = "AUTH0_DOMAIN";
+  Auth0FlutterWeb.auth0ClientId = "AUTH0_CLIENT_ID";
+  Auth0FlutterWeb.redirectUri = "YOUR_APP_REDIRECT_URI";
 
   // Set the URL strategy for our web app. Removes 
   // trailing hash(#) to ensure login callbacks
   // will be captured and processed correctly.
-  Auth0Flutter2.setPathUrlStrategy();
+  Auth0FlutterWeb.setPathUrlStrategy();
 
   runApp(const MyApp());
 }
@@ -53,8 +53,8 @@ void main() {
 Then invoke the class methods anywhere in your Dart code.
 
 ```dart
-Auth0Flutter2.instance.userAuthentication(screenHint: "signup");
-Auth0Flutter2.instance.userAuthentication(screenHint: "login");
-Auth0Flutter2.instance.logoutUser();
-Auth0Flutter2.instance.getLoggedInUserId();
+Auth0FlutterWeb.instance.userAuthentication(screenHint: "signup");
+Auth0FlutterWeb.instance.userAuthentication(screenHint: "login");
+Auth0FlutterWeb.instance.logoutUser();
+Auth0FlutterWeb.instance.getLoggedInUserId();
 ```

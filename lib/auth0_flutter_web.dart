@@ -64,8 +64,8 @@ class Auth0FlutterWeb {
     return instance._scheme;
   }
 
-  /// The instance of [Auth0Flutter2].
-  static final Auth0Flutter2 instance = Auth0Flutter2._();
+  /// The instance of [Auth0FlutterWeb].
+  static final Auth0FlutterWeb instance = Auth0FlutterWeb._();
 
   /// The Auth0 domain of the application.
   String? _auth0Domain;
