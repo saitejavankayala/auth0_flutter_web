@@ -1,6 +1,6 @@
 name: auth0_web_flutter
 description: A Flutter package to easily integrate Auth0 into Web Flutter apps.
-version: 0.0.6
+version: 0.0.7
 homepage: https://github.com/saitejavankayala/auth0_flutter_web
 repository: https://github.com/saitejavankayala/auth0_flutter_web
 

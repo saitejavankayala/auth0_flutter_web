@@ -6,6 +6,8 @@ void main() {
   Auth0FlutterWeb.auth0Domain = "enter the auth0 domain";
   //add the auth0ClientID
   Auth0FlutterWeb.auth0ClientId = "enter the auth0 client id";
+// add the redirect uri
+  Auth0FlutterWeb.redirectUri = "enter the redirect uri";
   Auth0FlutterWeb.setPathUrlStrategy();
   runApp(const MyApp());
 }

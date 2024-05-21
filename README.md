@@ -37,9 +37,13 @@ Then initialize the `Auth0FlutterWeb` class in your `main()` method.
 
 ```dart
 void main() {
+  // add the auth0domain
   Auth0FlutterWeb.auth0Domain = "AUTH0_DOMAIN";
+  //add the auth0ClientID
   Auth0FlutterWeb.auth0ClientId = "AUTH0_CLIENT_ID";
+// add the redirect uri
   Auth0FlutterWeb.redirectUri = "YOUR_APP_REDIRECT_URI";
+  
 
   // Set the URL strategy for our web app. Removes 
   // trailing hash(#) to ensure login callbacks
